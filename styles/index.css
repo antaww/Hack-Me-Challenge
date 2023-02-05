@@ -1,0 +1,12 @@
+:root {
+    --background-color: #000000;
+    --div-color: #090b11;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
