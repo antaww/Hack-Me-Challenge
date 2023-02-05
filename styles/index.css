@@ -1,41 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --background-color: #000000;
-    --div-color: #090b11;
-    --font-color: #ffffff;
+	--background-color: #000000;
+	--button-color: #121317;
+	--button-hover-color: #191a1f;
+	--div-color: #090b11;
+	--font-color: #ffffff;
 }
 
 body {
     background-color: var(--background-color);
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
     font-family: Poppins, serif;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+	justify-content: flex-start;
+	gap: 85px;
 }
 
 .navbar {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
+	align-items: center;
+	background-color: var(--div-color);
+	display: flex;
+	flex-flow: column;
+	gap: 5px;
+	padding: 36px;
+	width: 264px;
 }
 
 .navbar button {
-    background-color: var(--div-color);
-    border: none;
-    color: var(--font-color);
-    padding: 10px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+	background-color: var(--button-color);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0.125em 0.063em 0.063em rgba(0, 0, 0, 0.77);
+	color: var(--font-color);
+	cursor: pointer;
+	font-size: 16px;
+	margin: 4px 2px;
+	padding: 10px;
+	transition: all .3s;
+}
+
+.navbar button:hover {
+	background-color: var(--button-hover-color);
 }
 
 .navbar a {
-    text-decoration: none;
-    color: var(--font-color);
-    font-family: Poppins, serif;
+	color: var(--font-color);
+	font-family: Poppins, serif;
+	text-decoration: none;
+}
+
+.main {
+	display: flex;
+	background-color: var(--div-color);
+	color: var(--font-color);
+	flex-flow: column;
+	padding: 67px;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-left: 69px;
+	width: 100%;
 }
