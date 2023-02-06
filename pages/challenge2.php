@@ -13,6 +13,7 @@
 
 			if (!isset($_POST['code'])) {
 				echo '<form autocomplete="off" class="password-form" method="post">';
+				echo '<div class="pageTitle">Challenge 2</div>';
 				echo '<label for="code">Enter code</label>';
 				echo '<input autocomplete="off" type="password" name="code" id="code">';
 				echo '<button type="submit" value="Submit">Submit</button>';

@@ -65,13 +65,7 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '5107');
 
 	<body>
 		<?php
-		// if(isset($_COOKIE['user_id'])){
-		//     echo 'Votre ID de session est le ' .$_COOKIE['user_id'];
-		// }
-		?>
-		<?php
 		if (isset($_POST['bouton'])) {
-			// $name = $_POST['user_name'];
 			echo $_POST['user_name'];
 			$message = $_POST['message'];
 			echo $name;
@@ -80,8 +74,8 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '5107');
 		?>
 		<div class="container">
 			<form class="password-form" method="POST">
-				<div class="pageTitle title">Challenge 1</div>
-				<div class="secondaryTitle title">Please complet the form.</div>
+				<div class="pageTitle">Challenge 1</div>
+				<div class="secondaryTitle">Please complet the form.</div>
 				<input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
 				<input id='code' type="text" class="email formEntry" placeholder="Email" name="email"/>
 				<textarea id='code' class="message formEntry" placeholder="Message" name="message"></textarea>
