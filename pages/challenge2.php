@@ -4,6 +4,7 @@
 		<meta charset='UTF-8'>
 		<title>Hack Me Challenge</title>
 		<link rel='stylesheet' href='../styles/index.css'>
+		<link rel='stylesheet' href='../styles/challenge-2.css'>
 		<script src='../scripts/wtfisthis.js'></script>
 	</head>
 	<body>
@@ -11,21 +12,13 @@
 			<?php
 			$expectedCode = 'CHALLENGE48H'; //cookie -> message -> image -> flag js -> morse -> binary -> code
 
-			if (!isset($_POST['code'])) {
-				echo '<form autocomplete="off" class="password-form" method="post">';
-				echo '<div class="pageTitle">Challenge 2</div>';
-				echo '<label for="code">Enter code</label>';
-				echo '<input autocomplete="off" type="password" name="code" id="code">';
-				echo '<button type="submit" value="Submit">Submit</button>';
-				echo '</form>';
+			if(isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] == 'SELECT+*+FROM+dolphin'){
+				//todo: return data base content
 			} else {
-				$enteredCode = $_POST['code'];
-				if ($enteredCode == $expectedCode) {
-					echo '<p>Correct code !</p>';
-				} else {
-					echo '<a href="challenge2.php"><button>Try again.</button></a>';
-				}
+				echo 'What is my dolphin doing here ?';
 			}
+
+			echo '<img class="dolphin" src="dolphin.png" alt="dolphin">'
 			?>
 		</div>
 	</body>

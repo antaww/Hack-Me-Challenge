@@ -8,6 +8,10 @@
 	--font-color: #ffffff;
 }
 
+* {
+	user-select: none;
+}
+
 body {
 	background-color: var(--background-color);
 	display: flex;
