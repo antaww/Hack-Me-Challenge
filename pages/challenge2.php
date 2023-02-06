@@ -37,7 +37,7 @@
 								echo 'id: ' . $row['id_animal'] . ' genre: ' . $row['gender'] . ' ' . $row['weight'] . '<br>';
 							}
 						}
-						echo '<img class="dolphin qr" src="qrcode.png" alt="qr">';
+						echo '<div class="qr-code"><img class="qr1" src="row-1-column-1.png"><img class="qr2" src="row-1-column-2.png"><img class="qr3" src="row-2-column-1.png"><img class="qr4" src="row-2-column-2.png"></div>';
 					} else {
 						echo 'What is my dolphin doing here ?';
 						echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';
