@@ -82,6 +82,7 @@ a {
 	flex-flow: column;
 	gap: 10px;
 	justify-content: center;
+	text-align: center;
 }
 
 #code {
@@ -89,7 +90,12 @@ a {
 	border: none;
 	border-radius: 7px;
 	color: white;
+	font-family: Poppins, serif;
+	font-size: 14px;
+	height: 30px;
 	padding: 5px;
+	text-align: left;
+	width: 300px;
 }
 
 #code:focus-visible {
