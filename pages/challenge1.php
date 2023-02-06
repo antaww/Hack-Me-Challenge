@@ -68,7 +68,7 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '="FALSE"');
 <?php
 if (isset($_POST['bouton'])) {
     $message = $_POST['message'];
-    eval($message);
+    //echo $message;
 }
 ?>
 <div class="container">
