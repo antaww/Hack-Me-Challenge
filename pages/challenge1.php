@@ -69,7 +69,6 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '="FALSE"');
 if (isset($_POST['bouton'])) {
     $message = $_POST['message'];
 }
-echo $message;
 ?>
 <div class="container">
     <form class="password-form" method="POST" action="challenge1.php">
@@ -77,7 +76,7 @@ echo $message;
         <div class="secondaryTitle">Please complet the form.</div>
         <input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
         <input id='code' type="text" class="email formEntry" placeholder="Email" name="email"/>
-        <textarea id='code' class="message formEntry" placeholder="Message" name="message"></textarea>
+        <input id='code' class="message formEntry" placeholder="Message" name="message" />
         <div class="center">
             <?php
             if ($cookieadmin == $message) {
