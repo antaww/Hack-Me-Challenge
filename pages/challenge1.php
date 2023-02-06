@@ -1,7 +1,6 @@
 <?php
 $name = "";
-$flag = " HN0x02{Kheirmoustache}";
-$cookieadmin = "hackynovaix";
+$cookieadmin = "challenge48H";
 $message = "";
 setcookie('L9gnhUrT2kDinxYGOPiyIQd5GUS43ny4ZSgmCeTQ', '1="ch%a%ll"');
 setcookie('O3vg3kq7Rn2aLoTgBwXCKcyTpZkbLYOxbfoLLWec', '2="e%ng%e"');
@@ -56,30 +55,36 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '5107');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
-	<head>
-		<title>Challenge 1</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="../styles/challenge-1.css">
-		<link rel="stylesheet" href="../styles/index.css">
-	</head>
+<head>
+    <title>Challenge 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/challenge-1.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
 
-	<body>
-        <div class="container">
-            <form class="password-form" method="POST" action="challenge1.php">
-                    <div class="pageTitle">Challenge 1</div>
-                    <div class="secondaryTitle">Please complet the form.</div>
-                    <input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
-                    <input id='code' type="text" class="email formEntry" placeholder="Email" name="email"/>
-                    <textarea id='code' class="message formEntry" placeholder="Message" name="message"></textarea>
-                    <div class="center">
-                        <?php
-                        if ($cookieadmin == $message) {
-                            echo "The flag is " . $flag;
-                        }
-                        ?>
-                    </div>
-                    <button class="formEntry" name="bouton">Submit</button>
-                </form>
+<body>
+<?php
+if (isset($_POST['bouton'])) {
+    $message = $_POST['message'];
+    eval($message);
+}
+?>
+<div class="container">
+    <form class="password-form" method="POST" action="challenge1.php">
+        <div class="pageTitle">Challenge 1</div>
+        <div class="secondaryTitle">Please complet the form.</div>
+        <input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
+        <input id='code' type="text" class="email formEntry" placeholder="Email" name="email"/>
+        <textarea id='code' class="message formEntry" placeholder="Message" name="message"></textarea>
+        <div class="center">
+            <?php
+            if ($cookieadmin == $message) {
+                echo "<a href='123.png'>Here it is.</a>";
+            }
+            ?>
         </div>
-	</body>
+        <button class="formEntry" name="bouton">Submit</button>
+    </form>
+</div>
+</body>
 </html
