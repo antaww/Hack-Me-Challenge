@@ -13,7 +13,7 @@
 			<?php
 			$expectedCode = 'test';
 			if(isset($_POST['codeC32']) && $_POST['codeC32'] == '312'){
-				//todo: redirect to enigma.php to display the enigma
+				header('Location: enigma.php');
 			}
 
 			if (!isset($_POST['codeC3'])) {
@@ -40,14 +40,9 @@
 						dU P3UPL3 357<b class="coo3">48.736539142738536</b> <b class='coo9'>d123c710N d35 4ff41235</b> <b class='coo3'>1.3677733411949158</b>d3 L'4U702173 d35 P0Uv0125 PU8L1c5; c3773 v0L0N73 d017 5'3XP21M32
 						P42 d35 3L3c710N5 h0NN3735 qU1 d01v3N7 4v012 L13U <b class='coo12'>P3210d1qU3M3N7</b>, 4U 5Uff2493 UN1v3253L 394L 37 4U v073 <b class='coo12'>53c237</b> 0U 5U1v4N7 UN3 P20c3dU23
 						3qU1v4L3N73 455U24N7 L4 L183273 dU v073.
-						<br><b class="text"> La il faut un input qui marche uniquement si on met la clé "312" et qui permet d'afficher 3 énigmes chaque énigme permet
-							de trouver une partie du pastebin qui donne le flag.
-							En sachant que la réponse de l'énigme 3 sera la première partie, la réponse de l'énigme 2 sera la troisième partie et la réponse de
-							l'énigme 1 sera la deuxième partie. Le code donnera vers un pastebin avec le flag.
-						</b>
 					</p>
 					<form class="password-form" method="post">
-						<input class="code" type="text" name="name='codeC32'" placeholder="Key">
+						<input class="code" type="text" name="codeC32" placeholder="Key">
 						<button type="submit" value="Submit">Submit</button>
 					</form>
 					<?php

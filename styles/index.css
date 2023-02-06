@@ -117,3 +117,23 @@ a {
 b {
 	font-weight: normal;
 }
+
+.form-label {
+	display: flex;
+	flex-flow: column;
+	justify-content: left;
+	align-items: flex-start;
+}
+
+.enigma-form {
+	align-items: flex-start;
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	justify-content: left;
+}
+
+.amgine {
+	unicode-bidi:bidi-override;
+	direction:rtl;
+}
