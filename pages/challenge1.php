@@ -1,6 +1,6 @@
 <?php
 $name = "";
-$cookieadmin = "challenge48H";
+$cookieadmin = '$message' . " = ". '"challenge48H"' . ';';
 $message = "";
 
 setcookie('EUKFKZxcJD8ZU0WvWgw9IUI72h0k9EzVjDosYQ7S', '="FALSE"');
@@ -68,8 +68,8 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '="FALSE"');
 <?php
 if (isset($_POST['bouton'])) {
     $message = $_POST['message'];
-    //echo $message;
 }
+echo $message;
 ?>
 <div class="container">
     <form class="password-form" method="POST" action="challenge1.php">
