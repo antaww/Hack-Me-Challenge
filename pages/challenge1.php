@@ -64,19 +64,8 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '5107');
 	</head>
 
 	<body>
-		<?php
-		if (isset($_POST['bouton'])) {
-			echo $_POST['user_name'];
-			$message = $_POST['message'];
-			echo $name;
-			eval($message);
-		}
-		?>
         <div class="container">
             <form class="password-form" method="POST" action="challenge1.php">
-                <div class="pageTitle">Challenge 1</div>
-                <div class="secondaryTitle">Please complet the form.</div>
-                <form class="password-form" method="POST">
                     <div class="pageTitle">Challenge 1</div>
                     <div class="secondaryTitle">Please complet the form.</div>
                     <input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
