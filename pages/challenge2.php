@@ -37,11 +37,11 @@
 								echo 'id: ' . $row['id_animal'] . ' genre: ' . $row['gender'] . ' ' . $row['weight'] . '<br>';
 							}
 						}
+						echo '<img class="dolphin qr" src="qrcode.png" alt="qr">';
 					} else {
 						echo 'What is my dolphin doing here ?';
+						echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';
 					}
-
-					echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';
 				} else {
 					echo '<a href="challenge2.php"><button>Try again.</button></a>';
 				}
