@@ -3,20 +3,20 @@
 :root {
 	--background-color: #000000;
 	--button-color: #121317;
-	--button-hover-color: #191a1f;
+	--button-hover-color: #24252c;
 	--div-color: #090b11;
 	--font-color: #ffffff;
 }
 
 body {
-    background-color: var(--background-color);
-    display: flex;
-    font-family: Poppins, serif;
-    height: 100vh;
-    margin: 0;
-    width: 100vw;
-	justify-content: flex-start;
+	background-color: var(--background-color);
+	display: flex;
+	font-family: Poppins, serif;
 	gap: 85px;
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+	width: 100vw;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ body {
 	width: 264px;
 }
 
-.navbar button {
+button {
 	background-color: var(--button-color);
 	border: none;
 	border-radius: 5px;
@@ -40,26 +40,58 @@ body {
 	margin: 4px 2px;
 	padding: 10px;
 	transition: all .3s;
+	width: 189px;
 }
 
-.navbar button:hover {
+button:hover {
 	background-color: var(--button-hover-color);
 }
 
-.navbar a {
+a {
 	color: var(--font-color);
 	font-family: Poppins, serif;
 	text-decoration: none;
 }
 
 .main {
-	display: flex;
+	align-items: center;
 	background-color: var(--div-color);
 	color: var(--font-color);
+	display: flex;
 	flex-flow: column;
-	padding: 67px;
-	align-items: center;
 	justify-content: space-evenly;
 	margin-left: 69px;
+	padding: 67px;
 	width: 100%;
+}
+
+.container {
+	align-items: center;
+	background-color: var(--div-color);
+	color: var(--font-color);
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	justify-content: center;
+	width: 80%;
+}
+
+.password-form {
+	align-items: center;
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	justify-content: center;
+}
+
+#code {
+	background-color: var(--button-hover-color);
+	border: none;
+	border-radius: 7px;
+	color: white;
+	padding: 5px;
+}
+
+#code:focus-visible {
+	outline: none;
 }

@@ -4,19 +4,25 @@
 		<meta charset='UTF-8'>
 		<title>Hack Me Challenge</title>
 		<link rel='stylesheet' href='styles/index.css'>
-		<script src='scripts/index.js'></script>
+		<script src='scripts/wtfisthis.js'></script>
 	</head>
 	<body>
 		<div class="navbar">
-			<button>
-				<a href="challenge1.php">Challenge 1</a>
-			</button>
-			<button>
-				<a href="challenge2.php">Challenge 2</a>
-			</button>
-			<button>
-				<a href="challenge3.php">Challenge 3</a>
-			</button>
+			<a href='pages/challenge1.php'>
+				<button>
+					Challenge 1
+				</button>
+			</a>
+			<a href='pages/challenge2.php'>
+				<button>
+					Challenge 2
+				</button>
+			</a>
+			<a href='pages/challenge3.php'>
+				<button>
+					Challenge 3
+				</button>
+			</a>
 		</div>
 
 		<div class="main">
