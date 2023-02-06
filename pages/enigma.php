@@ -22,11 +22,11 @@
 				</label>
 				<button type='submit' value='Submit'>Submit</button>
 				<?php
-				if(isset($_POST['answer1']) && isset($_POST['answer2']) && isset($_POST['answer3'])) {
+				if (isset($_POST['answer1']) && isset($_POST['answer2']) && isset($_POST['answer3'])) {
 					$answer1 = $_POST['answer1'];
 					$answer2 = $_POST['answer2'];
 					$answer3 = $_POST['answer3'];
-					if($answer1 == '404' && $answer2 == 'A' && $answer3 == 'e') {
+					if ($answer1 == '404' && $answer2 == 'A' && $answer3 == 'e') {
 						echo 'What does this mean?';
 					} else {
 						echo 'An enigma ?';

@@ -1,6 +1,6 @@
 <?php
 $name = "";
-$cookieadmin = '$message' . " = ". '"challenge48H"' . ';';
+$cookieadmin = '$message' . " = " . '"challenge48H"' . ';';
 $message = "";
 
 setcookie('EUKFKZxcJD8ZU0WvWgw9IUI72h0k9EzVjDosYQ7S', '="FALSE"');
@@ -57,35 +57,35 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '="FALSE"');
 ?>
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <title>Challenge 1</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../styles/challenge-1.css">
-    <link rel="stylesheet" href="../styles/index.css">
-</head>
+	<head>
+		<title>Challenge 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../styles/challenge-1.css">
+		<link rel="stylesheet" href="../styles/index.css">
+	</head>
 
-<body>
-<?php
-if (isset($_POST['bouton'])) {
-    $message = $_POST['message'];
-}
-?>
-<div class="container">
-    <form class="password-form" method="POST" action="challenge1.php">
-        <div class="pageTitle">Challenge 1</div>
-        <div class="secondaryTitle">Please complet the form.</div>
-        <input type="text" class="code name formEntry" placeholder="Name" name="user_name"/>
-        <input type="text" class="code email formEntry" placeholder="Email" name="email"/>
-        <input class="code message formEntry" placeholder="Message" name="message" />
-        <div class="center">
-            <?php
-            if ($cookieadmin == $message) {
-                echo "<a href='123.png'>Here it is.</a>";
-            }
-            ?>
-        </div>
-        <button class="formEntry" name="bouton">Submit</button>
-    </form>
-</div>
-</body>
+	<body>
+		<?php
+		if (isset($_POST['bouton'])) {
+			$message = $_POST['message'];
+		}
+		?>
+		<div class="container">
+			<form class="password-form" method="POST" action="challenge1.php">
+				<div class="pageTitle">Challenge 1</div>
+				<div class="secondaryTitle">Please complet the form.</div>
+				<input type="text" class="code name formEntry" placeholder="Name" name="user_name"/>
+				<input type="text" class="code email formEntry" placeholder="Email" name="email"/>
+				<input class="code message formEntry" placeholder="Message" name="message"/>
+				<div class="center">
+					<?php
+					if ($cookieadmin == $message) {
+						echo "<a href='123.png'>Here it is.</a>";
+					}
+					?>
+				</div>
+				<button class="formEntry" name="bouton">Submit</button>
+			</form>
+		</div>
+	</body>
 </html>

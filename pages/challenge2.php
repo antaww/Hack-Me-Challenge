@@ -34,10 +34,10 @@
 
 						if ($result->num_rows > 0) {
 							while ($row = $result->fetch_assoc()) {
-								echo 'id: ' . $row['id_animal'] . ' genre: ' . $row['gender'] . ' ' . $row['weight'] . '<br>';
+								echo sprintf("id: %s genre: %s %s<br>", $row['id_animal'], $row['gender'], $row['weight']);
 							}
 						}
-						echo '<div class="qr-code"><img class="amhg" src="amhg.png"><img class="zsnd" src="zsnd.png"><img class="iefj" src="iefj.png"><img class="dsqih" src="dsqih.png"></div>';
+						echo '<div class="qr-code"><img class="amhg" src="amhg.png" alt="amhg"><img class="zsnd" src="zsnd.png" alt="zsnd"><img class="iefj" src="iefj.png" alt="iefj"><img class="dsqih" src="dsqih.png" alt="dsqih"></div>';
 					} else {
 						echo 'What is my dolphin doing here ?';
 						echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';
