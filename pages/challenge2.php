@@ -9,14 +9,14 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="pageTitle" style="color:white;">Challenge 2</div>
+			<div class="pageTitle">Challenge 2</div>
 			<?php
 			$expectedCode = 'CHALLENGE48H'; //cookie -> message -> image -> flag js -> morse -> binary -> code
 
 			if (!isset($_POST['codeC2'])) {
 				echo '<form autocomplete="off" class="password-form" method="post">';
 				echo '<label for="code">Enter code</label>';
-				echo '<input autocomplete="off" type="password" name="codeC2" id="code">';
+				echo '<input class="code" autocomplete="off" type="password" name="codeC2" id="code">';
 				echo '<button type="submit" value="Submit">Submit</button>';
 				echo '</form>';
 			} else {

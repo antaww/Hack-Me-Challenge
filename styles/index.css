@@ -78,6 +78,7 @@ a {
 	flex-flow: column;
 	gap: 10px;
 	justify-content: center;
+	padding: 40px;
 	width: 80%;
 }
 
@@ -90,7 +91,7 @@ a {
 	text-align: center;
 }
 
-#code {
+.code {
 	background-color: var(--button-hover-color);
 	border: none;
 	border-radius: 7px;
@@ -103,11 +104,16 @@ a {
 	width: 300px;
 }
 
-#code:focus-visible {
+.code:focus-visible {
 	outline: none;
 }
 
 .pageTitle {
+	color: var(--font-color);
 	font-size: 2em;
 	font-weight: bold;
+}
+
+b {
+	font-weight: normal;
 }

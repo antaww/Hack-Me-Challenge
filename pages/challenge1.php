@@ -74,9 +74,9 @@ if (isset($_POST['bouton'])) {
     <form class="password-form" method="POST" action="challenge1.php">
         <div class="pageTitle">Challenge 1</div>
         <div class="secondaryTitle">Please complet the form.</div>
-        <input id='code' type="text" class="name formEntry" placeholder="Name" name="user_name"/>
-        <input id='code' type="text" class="email formEntry" placeholder="Email" name="email"/>
-        <input id='code' class="message formEntry" placeholder="Message" name="message" />
+        <input type="text" class="code name formEntry" placeholder="Name" name="user_name"/>
+        <input type="text" class="code email formEntry" placeholder="Email" name="email"/>
+        <input class="code message formEntry" placeholder="Message" name="message" />
         <div class="center">
             <?php
             if ($cookieadmin == $message) {
