@@ -9,7 +9,7 @@
 	<body>
 		<div class="container">
 			<?php
-			$expectedCode = 'secret_code'; //code challenge 1
+			$expectedCode = 'CHALLENGE48H'; //cookie -> message -> image -> flag js -> morse -> binary -> code
 
 			if (!isset($_POST['code'])) {
 				echo '<form autocomplete="off" class="password-form" method="post">';
