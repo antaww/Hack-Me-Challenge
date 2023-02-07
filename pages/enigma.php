@@ -26,8 +26,8 @@
 					$answer1 = $_POST['answer1'];
 					$answer2 = $_POST['answer2'];
 					$answer3 = $_POST['answer3'];
-					if ($answer1 == '404' && $answer2 == 'A' && $answer3 == 'e') {
-						echo 'What does this mean?';
+					if ($answer1 == 'and' && $answer2 == 'A' && $answer3 == 'e') {
+						echo '<a href="validation.php">What does this mean?</a>';
 					} else {
 						echo 'An enigma ?';
 					}

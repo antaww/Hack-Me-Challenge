@@ -31,9 +31,9 @@
 			<div class="difficulties">
 				<h2>Challenges difficulties</h2>
 				<ul>
-					<li>Challenge 1: 2/10</li>
-					<li>Challenge 2: 4/10</li>
-					<li>Challenge 3: 6/10</li>
+					<li>Challenge 1: 8/10</li>
+					<li>Challenge 2: 7/10</li>
+					<li>Challenge 3: 5/10</li>
 				</ul>
 			</div>
 		</div>
