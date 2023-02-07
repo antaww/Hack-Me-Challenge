@@ -62,6 +62,7 @@ setcookie('IefOyRdPRxhhU6Tu0tY4APhwaUAs7qR71mLFFQL4', '="FALSE"');
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="../styles/challenge-1.css">
 		<link rel="stylesheet" href="../styles/index.css">
+		<script src="../scripts/wtfisthis.js"></script>
 	</head>
 
 	<body>
