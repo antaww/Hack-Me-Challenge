@@ -11,7 +11,7 @@
 		<div class='container'>
 			<div class='pageTitle'>Challenge 3</div>
 			<?php
-			$expectedCode = 'test';
+			$expectedCode = '300%34TTfd';
 			if (isset($_POST['codeC32']) && $_POST['codeC32'] == '312') {
 				header('Location: enigma.php');
 			}
