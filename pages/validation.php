@@ -14,8 +14,8 @@
 			$expectedCode = 'CHALLENGE48H{mdpDAUPHIN}{mdpQRCODE}andAe';
 
 			if (!isset($_POST['codeV'])) {
-				echo '<div class="message">What if you didnt remember ?</div>';
-				echo '<form autocomplete="off" class="password-form" method="post">';
+				echo '<div class="message">' . 'What if you' . "didn't" . 'remember ?' . '</div>';
+                echo '<form autocomplete="off" class="password-form" method="post">';
 				echo '<input class="code" autocomplete="off" type="password" name="codeV" id="code">';
 				echo '<button type="submit" value="Submit">Submit</button>';
 				echo '</form>';

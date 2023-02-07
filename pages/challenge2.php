@@ -45,7 +45,7 @@
         } else {
             $enteredCode = $_POST['codeC2'];
             if ($enteredCode == $expectedCode) {
-                echo 'I don' . "t" . 'remember my dolphin' . "'s" . 'weight?';
+                echo 'I don' . "'t" . ' remember my dolphin' . "'s" . ' weight?';
                 echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';
             } else {
                 echo '<a href="challenge2.php"><button>Try again.</button></a>';
