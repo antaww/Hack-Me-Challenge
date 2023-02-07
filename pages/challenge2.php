@@ -29,15 +29,16 @@
 					$link = new mysqli($host_name, $user_name, $password, $database); // Working on FTP only
 
 					if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] == 'SELECT+*+FROM+dolphin') {
-						$sql = str_replace('+', ' ', $_SERVER['QUERY_STRING']);
+                        header('Location: challenge2.php');
+                        $sql = str_replace('+', ' ', $_SERVER['QUERY_STRING']);
 						$result = $link->query($sql);
-
 						if ($result->num_rows > 0) {
 							while ($row = $result->fetch_assoc()) {
 								echo sprintf("id: %s genre: %s %s<br>", $row['id_animal'], $row['gender'], $row['weight']);
 							}
 						}
-						echo '<div class="qr-code"><img class="amhg" src="amhg.png" alt="amhg"><img class="zsnd" src="zsnd.png" alt="zsnd"><img class="iefj" src="iefj.png" alt="iefj"><img class="dsqih" src="dsqih.png" alt="dsqih"></div>';
+
+                        echo '<div class="qr-code"><img class="amhg" src="amhg.png" alt="amhg"><img class="zsnd" src="zsnd.png" alt="zsnd"><img class="iefj" src="iefj.png" alt="iefj"><img class="dsqih" src="dsqih.png" alt="dsqih"></div>';
 					} else {
 						echo 'What is my dolphin doing here ?';
 						echo '<img class="dolphin" src="dolphin.png" alt="dolphin">';

@@ -8,25 +8,25 @@
     display: grid;
 }
 
-.qr1 {
+.amhg {
     grid-column: -41;
     grid-row: 7;
     transform: rotate(-180deg);
 }
 
-.qr2 {
+.zsnd {
     grid-column: -117;
     grid-row: -50;
     transform: rotate(90deg);
 }
 
-.qr3 {
+.iefj {
     grid-column: 41;
     grid-row: -7;
     transform: rotate(-90deg);
 }
 
-.qr4 {
+.dsqih {
     grid-column: -71;
     grid-row: -47;
     transform: rotate(180deg);
