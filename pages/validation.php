@@ -11,10 +11,10 @@
 		<div class='container'>
 			<div class='pageTitle'>Validation</div>
 			<?php
-			$expectedCode = 'CHALLENGE48H300%34TTfd';
+			$expectedCode = 'CHALLENGE48H300%34TTfdandAe';
 
 			if (!isset($_POST['codeV'])) {
-				echo '<div class="message">' . 'What if you' . "didn't" . 'remember ?' . '</div>';
+                echo '<div class="message">' . 'What if you ' . "didn't " . 'remember ?' . '</div>';
                 echo '<form autocomplete="off" class="password-form" method="post">';
 				echo '<input class="code" autocomplete="off" type="password" name="codeV" id="code">';
 				echo '<button type="submit" value="Submit">Submit</button>';
