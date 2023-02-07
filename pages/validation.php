@@ -11,7 +11,7 @@
 		<div class='container'>
 			<div class='pageTitle'>Validation</div>
 			<?php
-			$expectedCode = 'CHALLENGE48H{mdpDAUPHIN}{mdpQRCODE}andAe';
+			$expectedCode = 'CHALLENGE48H300%34TTfd';
 
 			if (!isset($_POST['codeV'])) {
 				echo '<div class="message">' . 'What if you' . "didn't" . 'remember ?' . '</div>';
