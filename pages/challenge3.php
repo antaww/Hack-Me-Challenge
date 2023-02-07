@@ -12,7 +12,7 @@
 			<div class='pageTitle'>Challenge 3</div>
 			<?php
 			$expectedCode = '300%34TTfd';
-			if (isset($_POST['codeC32']) && $_POST['codeC32'] == '312') {
+			if ((isset($_POST['codeC32']) && $_POST['codeC32'] == '312') || (isset($_POST['answer1']) && isset($_POST['answer2']) && isset($_POST['answer3']))) {
 			?>
 			<form class='enigma-form' method='post'>
 				<label class='form-label'><p>1 - I am between 403 and 405.</p>
